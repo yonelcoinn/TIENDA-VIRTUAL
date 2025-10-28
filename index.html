@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cápsula Store - Tu selección, a un toque de distancia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Banner Superior -->
+    <header class="banner">
+        <div class="banner-content">
+            <img src="https://res.cloudinary.com/drvg4zja0/image/upload/v1761614761/Gemini_Generated_Image_57hqwp57hqwp57hq-removebg-preview_bwbvmf.png" alt="Cápsula Store Logo" class="store-logo">
+            <h1 class="logo">CÁPSULA STORE</h1>
+            <p class="tagline">Tu selección, a un toque de distancia</p>
+        </div>
+    </header>
+
+    <!-- Categorías -->
+    <main class="container">
+        <!-- Tabs de Categorías -->
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="showCategory('calzado')">
+                <i class="fas fa-shoe-prints"></i> Calzado
+            </button>
+            <button class="tab-btn" onclick="showCategory('dama')">
+                <i class="fas fa-tshirt"></i> Ropa Deportiva Dama
+            </button>
+            <button class="tab-btn" onclick="showCategory('caballero')">
+                <i class="fas fa-tshirt"></i> Ropa Deportiva Caballero
+            </button>
+        </div>
+
+        <!-- Contenedor de Productos por Categoría -->
+        <div id="categoria-calzado" class="category-content active">
+            <section class="products-grid">
+            <div class="product-card">
+                <div class="product-image-gallery">
+                    <img src="https://res.cloudinary.com/drvg4zja0/image/upload/v1761615570/WhatsApp_Image_2025-10-27_at_8.36.28_PM_pncbom.jpg" alt="Adidas Ultra Caballero" class="product-image active" onclick="changeImage(this)">
+                    <img src="https://res.cloudinary.com/drvg4zja0/image/upload/v1761615570/WhatsApp_Image_2025-10-27_at_8.36.29_PM_uhutn7.jpg" alt="Adidas Ultra Caballero" class="product-image" onclick="changeImage(this)">
+                    <img src="https://res.cloudinary.com/drvg4zja0/image/upload/v1761615570/WhatsApp_Image_2025-10-27_at_8.36.28_PM_1_r1dn5z.jpg" alt="Adidas Ultra Caballero" class="product-image" onclick="changeImage(this)">
+                    <img src="https://res.cloudinary.com/drvg4zja0/image/upload/v1761615570/WhatsApp_Image_2025-10-27_at_8.36.28_PM_2_semm1v.jpg" alt="Adidas Ultra Caballero" class="product-image" onclick="changeImage(this)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">REPOSICIÓN COLECCIÓN ADIDAS ULTRA CABALLERO, ACABADOS DE PRIMERA 🔥 👣DE LA 37-43👣</h3>
+                    <p class="product-price">$60.000</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20ADIDAS%20ULTRA%20CABALLERO" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        </div>
+
+        <!-- Categoría: Ropa Deportiva Dama -->
+        <div id="categoria-dama" class="category-content">
+            <section class="products-grid">
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Leggins Deportivos Rojos</h3>
+                    <p class="product-price">$89.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Leggins%20Deportivos%20Rojos" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6a6a6a 0%, #4a4a4a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Top Deportivo Sin Mangas</h3>
+                    <p class="product-price">$79.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Top%20Deportivo%20Sin%20Mangas" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5a5a5a 0%, #3a3a3a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Shorts Deportivos Rosa</h3>
+                    <p class="product-price">$69.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Shorts%20Deportivos%20Rosa" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #7a7a7a 0%, #5a5a5a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Sudadera Deportiva Negra</h3>
+                    <p class="product-price">$129.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Sudadera%20Deportiva%20Negra" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6d6d6d 0%, #4d4d4d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Sujetador Deportivo</h3>
+                    <p class="product-price">$99.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Sujetador%20Deportivo" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5c5c5c 0%, #3c3c3c 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Camiseta Deportiva Gris</h3>
+                    <p class="product-price">$89.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Camiseta%20Deportiva%20Gris" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Pantalón Deportivo Negro</h3>
+                    <p class="product-price">$149.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Pantalón%20Deportivo%20Negro" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6a6a6a 0%, #4a4a4a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chaqueta Deportiva Azul</h3>
+                    <p class="product-price">$179.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Chaqueta%20Deportiva%20Azul" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5a5a5a 0%, #3a3a3a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Leggins Con Banda Lateral</h3>
+                    <p class="product-price">$94.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Leggins%20Con%20Banda%20Lateral" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #7a7a7a 0%, #5a5a5a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Crop Top Deportivo</h3>
+                    <p class="product-price">$84.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Crop%20Top%20Deportivo" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6d6d6d 0%, #4d4d4d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Falda Deportiva Negra</h3>
+                    <p class="product-price">$119.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Falda%20Deportiva%20Negra" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5c5c5c 0%, #3c3c3c 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Top Deportivo Con Cuello Alto</h3>
+                    <p class="product-price">$109.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Top%20Deportivo%20Con%20Cuello%20Alto" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Shorts Con Cintura Alta</h3>
+                    <p class="product-price">$79.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Shorts%20Con%20Cintura%20Alta" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6a6a6a 0%, #4a4a4a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Set Deportivo Coordinado</h3>
+                    <p class="product-price">$229.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Set%20Deportivo%20Coordinado" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5a5a5a 0%, #3a3a3a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Leggins De Compresión</h3>
+                    <p class="product-price">$139.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Leggins%20De%20Compresión" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #7a7a7a 0%, #5a5a5a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Sujetador Deportivo Deportivo</h3>
+                    <p class="product-price">$94.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Sujetador%20Deportivo%20Deportivo" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6d6d6d 0%, #4d4d4d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chaleco Deportivo</h3>
+                    <p class="product-price">$89.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Chaleco%20Deportivo" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #5c5c5c 0%, #3c3c3c 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Top Deportivo Con Espalda Abierta</h3>
+                    <p class="product-price">$99.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Top%20Deportivo%20Con%20Espalda%20Abierta" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Leggins Con Reflejante</h3>
+                    <p class="product-price">$124.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Leggins%20Con%20Reflejante" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #6a6a6a 0%, #4a4a4a 100%);"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Sudadera Oversized Deportiva</h3>
+                    <p class="product-price">$159.900</p>
+                    <span class="whatsapp-tooltip" data-tooltip="Pedir por WhatsApp">
+                        <a href="https://wa.me/573165847930?text=Hola!%20Estoy%20interesado%20en%20Sudadera%20Oversized%20Deportiva" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <!-- Categoría: Ropa Deportiva Caballero -->
+        <div id="categoria-caballero" class="category-content">
+            <section class="products-grid">
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Cápsula Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
