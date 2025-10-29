@@ -47,6 +47,23 @@ function changeImage(clickedImage) {
     clickedImage.classList.add('active');
 }
 
+// Navegación por flechas en cualquier galería
+function changeGalleryImage(buttonElement, direction) {
+    const gallery = buttonElement.closest('.product-image-gallery');
+    if (!gallery) return;
+
+    const images = Array.from(gallery.querySelectorAll('.product-image'));
+    if (images.length === 0) return;
+
+    const currentIndex = images.findIndex(img => img.classList.contains('active'));
+    const nextIndex = direction === 'prev'
+        ? (currentIndex - 1 + images.length) % images.length
+        : (currentIndex + 1) % images.length;
+
+    images.forEach(img => img.classList.remove('active'));
+    images[nextIndex].classList.add('active');
+}
+
 // Auto-rotación de imágenes en la galería del primer producto
 document.addEventListener('DOMContentLoaded', function() {
     const gallery = document.querySelector('.product-image-gallery');

@@ -54,7 +54,7 @@ body {
 }
 
 .store-logo {
-    max-width: 200px;
+    max-width: 312px;
     height: auto;
     margin-bottom: 1rem;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
@@ -285,6 +285,41 @@ body {
     z-index: 2;
 }
 
+/* Flechas de Navegación */
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 255, 255, 0.9);
+    color: #0a0a0a;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.gallery-arrow:hover {
+    background: #00ffff;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+.gallery-arrow.gallery-prev {
+    left: 10px;
+}
+
+.gallery-arrow.gallery-next {
+    right: 10px;
+}
+
 /* Indicadores de galería */
 .gallery-indicators {
     position: absolute;
@@ -338,17 +373,17 @@ body {
 }
 
 .product-name {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 0.8rem;
-    min-height: 4rem;
+    min-height: 4.5rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .product-price {
@@ -457,7 +492,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .store-logo {
-        max-width: 150px;
+        max-width: 234px;
     }
 
     .logo {
